@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+  list-style-type:none;
+  font-family:'Montserrat',sans-serif;
+ }
+
+:root{
+       --primary-color:#fff;
+       --sidebar-color:#e7e7e7;
+       --hover-background-color:#c4c7c5;
+       --primary-text-color:#444746;
+     }
+
+.container{
+           max-width:1364px;
+           margin-left:auto;
+           margin-right:auto;
+          }
+
+.gmail-inbox{
+             display:grid;
+             grid-template-columns:1fr 16fr;
+            }
+
+
+/*Sidebar*/
+
+.sidebar {
+          padding:20px 10px;
+          background:var(--sidebar-color);
+          height:100vh;
+          display:flex; 
+          flex-direction:column;
+          gap:20px;
+          align-items:center;
+         }
+
+.side-nav-link{
+               display:flex;
+               flex-direction:column;
+               gap:5px;
+               justify-content:center;
+               align-items:center;  
+               width:45px;
+               height:45px;       
+             }
+
+.side-nav-link span i {
+                       font-size:16px;
+                       font-weight:600;
+                      }
+.hide-main:hover{
+                 background:var(--hover-background-color);
+                 border-radius:50%;
+                }
+.link-content{
+              font-size:13px;
+              font-weight:500;
+             }
+
+#mail-logo{
+            width:100%;
+            height:100%;
+            border-radius:25px;
+            background:#bacbe7;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:7px;
+            position:relative;
+          }
+#mail-count{
+            background:#b3261e;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:var(--primary-color);
+            font-size:12px;
+            font-weight:600;
+            border:1px solid var(--primary-color);
+            padding:3px;
+            position:absolute;
+            top:-7px;
+            right:3px;           
+           }
+.media-logo{
+              width:100%;
+              height:100%;
+              border-radius:25px;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              padding:7px;
+            }
+
+.media-logo:hover{
+                   background:var(--hover-background-color);
+                  }
+
+/*Email Part */
+
+   .email-details{
+                   background:#f2f2f2;
+                 }
+
+   /* Header */
+    .header{
+            padding:15px 18px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+           }
+    
+    .app-logo{
+               display:flex;
+               justify-content:center;
+               align-items:center;
+               gap:15px;
+               padding-right:70px;
+             }
+
+    .logo-img img{
+                   max-width:100%;
+                   height:20px;
+                 }
+
+     .logo-content{
+                   font-size: 20px;
+                   font-weight: 400;
+                  }
+
+     .email-form{
+                  width:100%;
+                  max-width:500px;
+                  border-radius:30px;
+                  padding:10px 15px;
+                  background:#e2e9f3;
+                  display:flex;
+                  gap:5px;
+                  align-items:center;
+                }
+                 
+     #email-search{
+                   padding:8px 10px;
+                   border:none;
+                   outline:none;
+                   width:100%;
+                   background:transparent;
+                   color:black;
+                   font-size:16px;
+                  }
+
+   
+    .search-option {
+                     font-variation-settings:
+                     'FILL' 0,
+                     'wght' 400,
+                     'GRAD' 0,
+                     'opsz' 24
+                   }
+
+    .search-option{
+                   color:var(--primary-text-color);
+                  }
+ 
+    .email-options{
+                    display:flex;
+                    gap:10px;
+                    justify-content:space-between;
+                    align-items:center;
+                  }
+
+    .account-state{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    gap:10px;
+                    padding:10px;
+                    border-radius:20px;
+                    background:#e2e9f3;
+                  }
+    .active-logo{
+                 width:10px;
+                 height:10px;
+                 background:#0f5223;
+                 border-radius:50%;
+                }
+    .state{
+           font-size:16px;
+           color:#1f1f1f;
+          }
+
+     .account-state i{
+                      font-size:16px;
+                      color:#1f1f1f;
+                     }
+
+     .additional-opt{ 
+                     width:45px;
+                     height:45px;
+                     padding:5px;
+                     border-radius:50%;
+                     display:flex;
+                     justify-content:center;
+                     align-items:center;
+                   }
+     .additional-opt{
+                     font-size:20px;
+                     color:#444746;
+                    }
+
+     .additional-opt:hover{
+                          background:var(--hover-background-color);
+                          }
+     .account-info{
+                   display:flex;
+                   gap:8px;
+                   align-items:center;
+                   padding:5px;
+                   border-radius:20px;
+                   border:1px solid #c4c7c5;
+                 }
+
+     .company-logo img{
+                       max-width:100%;
+                       height:40px;
+                      }
+                      
+     .user{
+           width:40px;
+           height:40px;
+           border-radius:50%;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           background:#072711;
+           color:#fff;
+          }
+  
+     /*Email Info */
+ 
+   .email-info{
+                display:grid;
+                grid-template-columns:1fr 4fr;
+              }
+   .email-types{
+                 padding:10px;
+               }
+   .compose-mail{
+                   display:flex;
+                   gap:10px;
+                   align-items:center;
+                   padding:10px 15px;
+                   border-radius:16px;
+                   background:#7fcfff;
+                 }            
+
+   .send-mail{
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+              }
+
