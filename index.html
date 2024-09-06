@@ -148,11 +148,16 @@
                          <div class="email-status">
                               <ul>
                                  <li>
-                                    <span>
-                                        <i class="fa-solid fa-inbox"></i>
+                                    <span class="received-mail">
+                                           <span>
+                                                <i class="fa-solid fa-inbox"></i>
+                                           </span>
+                                           <span>
+                                               Inbox
+                                           </span>
                                     </span>
-                                    <span>
-                                        Inbox
+                                    <span class="email-count">
+                                          8
                                     </span>
                                  </li>
 
@@ -181,20 +186,94 @@
                                         send
                                     </span>
                                     <span>
-                                        Snoozed
+                                       Send
                                     </span>
-
                                  </li>
 
-                                 <li></li>
+                                 <li>
+                                     <span class="draft-mail">
+                                          <span>
+                                              <i class="fa-regular fa-file"></i>
+                                          </span>
+                                          <span>
+                                              Draft
+                                          </span>
+                                     </span>
+                                     <span class="email-count">
+                                          1
+                                     </span>
+                                 </li>
 
-                                 <li></li>
+                                 <li>
+                                     <span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                    <span>
+                                         More
+                                    </span>
+                                 </li>
 
                               </ul>
                          </div>
+                         <div class="labels">
+                              <span class="label-name">
+                                   Label
+                              </span>
+                              <span class="label-icon" title="Create New Label">
+                                   <i class="fa-solid fa-plus"></i>
+                              </span>
+                         </div>
                    </div>
 
-                   <div = "email">
+                   <!--Email Box-->          
+
+                   <div class="email-box">
+                         <div class="email-box-head">
+                               <div class="email-select">
+                                    <div class="select-opt">
+                                         <div class="select" title="select">
+                                            <input type="checkbox" id="select-all">
+                                         </div>
+                                         
+                                             <label for="select-all" title="select" class="select">
+                                                   <i class="fa-solid fa-angle-down"></i>
+                                             </label>
+                                        
+                                    </div>
+                       
+                                    <div class="refresh" title="Refresh">
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </div>  
+                                   
+                                    <div class="more-options" title="More">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>                                 
+                               </div>
+
+                               <div class="email-version">
+                                    <div class="latest-old">
+                                       1-25 of 25
+                                    </div>
+                                    <div class="check-version" title="Newer">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div class="check-version" title="Older">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+
+                               </div>
+                         </div>
+
+                         <!--Emails-->
+                         <div class="email-content">
+                             <ul class="email-lists">
+                                  <li>
+                                      <div>
+                                          <input type="checkbox">
+                                      </div>
+                                  </li>
+                             </ul>
+                         </div>
 
                    </div>
                 </div>

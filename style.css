@@ -13,6 +13,7 @@
        --sidebar-color:#e7e7e7;
        --hover-background-color:#c4c7c5;
        --primary-text-color:#444746;
+       --email-box-text:#888a89;
      }
 
 .container{
@@ -108,6 +109,7 @@
 
    .email-details{
                    background:#f2f2f2;
+                  
                  }
 
    /* Header */
@@ -251,15 +253,19 @@
                 grid-template-columns:1fr 4fr;
               }
    .email-types{
-                 padding:10px;
+                 padding:10px;                                  
                }
    .compose-mail{
                    display:flex;
                    gap:10px;
+                   justify-content:center;
                    align-items:center;
                    padding:10px 15px;
                    border-radius:16px;
                    background:#7fcfff;
+                   max-width:135px;
+                   font-size:14px;
+                   font-weight:500;
                  }            
 
    .send-mail{
@@ -269,4 +275,156 @@
               'GRAD' 0,
               'opsz' 24
               }
+   .send-mail{
+              font-size:20px !important;
+             }
+   .email-status ul{
+                    padding-top:40px;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    gap:20px;
+                   }
+   .received-mail,.draft-mail{
+                   display:flex;
+                   justify-content:flex-start;
+                   align-items:center;
+                   gap:20px;   
+                 }
+   .email-status ul li{
+                       padding:8px 12px;
+                       border-radius:20px;
+                       display:flex;
+                       justify-content:flex-start;
+                       align-items:center;
+                       gap:15px;
+                       color:#242528;
+                       font-size:14px;
+                       font-weight:500;
+                      }
+    .email-status ul li:hover{
+                               background:var(--hover-background-color);
+                             }
+    .email-status ul li:first-child{
+                                     background:#d3e3fb;
+                                     pointer-events: none;
+                                     color:#001d34;
+                                     font-weight:600;
+                                   }
+    .email-status ul li:first-child, .email-status ul li:nth-child(5)
+                                                                     {
+                                                                       justify-content:space-between;
+                                                                      }
+    .email-count{
+                 font-size:15px;
+                 font-weight:500;
+                }
+    .labels{
+             padding:30px 12px;
+             display:flex;
+             justify-content:space-between;
+             align-items:center;
+           }
+    .label-name{
+                font-size:17px;
+                color:#1f1f1f;
+                font-weight:500;
+               }
+    .label-icon{
+                 color:#1f1f1f;
+                 width:30px;
+                 height:30px;
+                 border-radius:50%;
+                 display:flex;
+                 justify-content:center;
+                 align-items:center;
+               }     
+    .label-icon:hover{
+                      background:var(--hover-background-color);
+                     }
+     
+      /* Email */
+           
+          .email-box{
+                 
+                 border-radius:16px;
+                 background:var(--primary-color);
+                 width:100%;
+                 height:500px;
+                }
+          .email-box-head{
+                          padding:0px 10px;
+                          display:flex;
+                          align-items:center;
+                         }
+
+          .email-select{
+                         display:flex;
+                         gap:10px;
+                         align-items:center;
+                         flex:1;
+                       }
+
+          .select-opt{
+                      display:flex;
+                      gap:10px;
+                     }
+          .select{                       
+                  padding:5px;
+                  border-radius:8px;
+                  color:var(--email-box-text);
+                  font-size:20px;
+                  display:flex; 
+                  justify-content:center;
+                  align-items:center;
+                 }
+          .select:hover{
+                         background:#e3e2e2;
+                       }
+          
+          .refresh,.more-options{
+                                 color:var(--email-box-text);                             
+                                 width:40px;
+                                 height:40px;
+                                 border-radius:50%;
+                                 display:flex;
+                                 justify-content:center;
+                                 align-items:center;
+                                }
+         .refresh:hover,.more-options:hover{
+                                               background:#e3e2e2;
+                                           }
+         .email-version{
+                         display:flex;
+                         justify-content:flex-end;
+                         align-items:center;
+                         flex:1;
+                       }
+          .latest-old{
+                      padding:10px 15px;
+                      border-radius:16px;
+                      font-size:12px;
+                      font-weight:500;
+                      color:#909090;
+                     }                             
+          .latest-old:hover{
+                             background:#e3e2e2;
+                           }
+          .check-version{
+                         font-size:14px;
+                         font-weight:500;
+                         color:#909090;
+                         padding:0 10px;
+                        }
+           /*Email Contents */
+                   .email-lists{
+                                
+                               }
+                   .email-lists li{
+                                    padding:10px 14px;
+                                    background:#f2f6fc;
+                                  }
+
+
+
 
